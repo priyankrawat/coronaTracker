@@ -8,7 +8,7 @@ import styles from './Chart.module.css';
 const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
   const [dailyData, setDailyData] = useState({});
 
-  useEffect(() => {
+  useEffect(() => { 
     const fetchMyAPI = async () => {
       const initialDailyData = await fetchDailyData();
 
@@ -39,8 +39,8 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     ) : null
   );
 
-  const lineChart = (
-    dailyData[0] ? (
+  const lineChart = ( 
+    dailyData[0] ? ( 
       <Line
         data={{
           labels: dailyData.map(({ date }) => date),
@@ -49,7 +49,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
             label: 'Infected',
             borderColor: '#3333ff',
             fill: true,
-          }, {
+          }, { 
             data: dailyData.map((data) => data.deaths),
             label: 'Deaths',
             borderColor: 'red',
