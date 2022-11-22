@@ -35,7 +35,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Recovered
             </Typography>
             <Typography variant="h5" component="h2">
-              <CountUp start={0} end={recovered.value} duration={2.75} separator="," />
+              <CountUp start={0} end={recovered.value} duration={2.85} separator="," />
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
