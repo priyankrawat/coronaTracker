@@ -4,7 +4,7 @@ import { Cards, CountryPicker, Chart } from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
  
-import image from './images/image.png';
+import image from './images/image.png'; 
  
 class App extends React.Component { 
   state = { 
