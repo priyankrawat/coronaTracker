@@ -12,7 +12,7 @@ class App extends React.Component {
     country: '',
   } 
 
-  async componentDidMount() {
+  async componentDidMount() { 
     const data = await fetchData();
 
     this.setState({ data });
