@@ -6,7 +6,7 @@ import styles from './App.module.css';
  
 import image from './images/image.png';
  
-class App extends React.Component {
+class App extends React.Component { 
   state = { 
     data: {},
     country: '',
